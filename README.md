@@ -1,4 +1,3 @@
-# WarTorn ASCII Game
-==============================
+# ASCII-Game "WarTorn"
 
 Thanks for watching :)
