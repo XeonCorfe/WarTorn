@@ -6,7 +6,35 @@ public class WarTorn {
 	public static boolean flag;
 	
     public static void main(String[] args){
+		for(int i=0;i<32;i++) Log("");
+		Log("         __      __                   ______                         ");
+		Log("        /\\ \\  __/\\ \\                 /\\__  _\\                        ");
+		Log("        \\ \\ \\/\\ \\ \\ \\     __     _ __\\/_/\\ \\/   ___   _ __    ___    ");
+		Log("         \\ \\ \\ \\ \\ \\ \\  /'__`\\  /\\`'__\\ \\ \\ \\  / __`\\/\\`'__\\/' _ `\\  ");
+		Log("          \\ \\ \\_/ \\_\\ \\/\\ \\L\\.\\_\\ \\ \\/   \\ \\ \\/\\ \\L\\ \\ \\ \\/ /\\ \\/\\ \\ ");
+		Log("           \\ `\\___x___/\\ \\__/.\\_\\\\ \\_\\    \\ \\_\\ \\____/\\ \\_\\ \\ \\_\\ \\_\\");
+		Log("            '\\/__//__/  \\/__/\\/_/ \\/_/     \\/_/\\/___/  \\/_/  \\/_/\\/_/");
+		Log("                                                                     ");
+		Log("                                                                     ");
+		Log("                                                                     ");
+		Log("                                                                     ");
+		Log("                                    (P)lay                           ");
+		Log("                                    (E)xit                           ");
+		Log("                                                                     ");
+		Log("                                                                     ");
+		Log("                                                                     ");
+		Log("                                                                     ");
+		Log("                                                                     ");
 		Scanner in = new Scanner(System.in);
+		while(true){
+			String menu = in.nextLine();
+			if (menu.length() > 0){
+			if (menu.equals("exit") || menu.equals("e") || menu.equals("E") || menu.equals("Exit")) System.exit(0);
+			if (menu.equals("play") || menu.equals("p") || menu.equals("P") || menu.equals("Play")) break;
+				else
+			Log("Error!");
+			}
+		}
 		Init();
 		Draw();
 		while(true){
